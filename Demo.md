@@ -23,15 +23,6 @@ In this demo, you will see:
 
 - [Windows Azure Web Sites](https://www.windowsazure.com/en-us/home/scenarios/web-sites/)
 
-<a name="setup" />
-### Setup and Configuration ###
-
-In order to execute this demo you need to set up your environment.
-
-1. Copy the vendor folder into the source folder.
-
-> **Note:** The vendor folder contains thirds party libraries not normally distributed with the demo source code.
-
 ---
 
 <a name="Demo" />
@@ -147,7 +138,29 @@ CREATE TABLE url (
 > Our database now has the table we're going to use for the rest of this demo.
 
 <a name="segment3" />
-### Upload an existing PHP Website into the Windows Azure Web Site using GIT ###
+### Adding Depedent Libraries and Uploading an existing PHP Website into the Windows Azure Web Site using GIT ###
+
+> **Speaking Point**
+>
+> Before we can push our site up to Windows Azure, we need to pull down a couple third party libraries.  This PHP site was built using Silex which is a micro-PHP framework.  Silex allows the site to easily set up web service end points.  In addition, Silex can use a templating engine called Twig, which we are using here to show some of the Web UI.  Let's go grab those libraries now.
+
+1.  Open a browser and go to http://silex.sensiolabs.org/
+
+1.  Click the download link.
+
+1.  Go to the bottom of the page and download the PHAR file.
+
+1.  Place the PHAR file in the following folder structure: /source/vendor/Silex/silex.phar
+
+1.  In your browser go to http://twig.sensiolabs.org/
+
+1.  Click the "Install Now" button on the right side of the page.
+
+1.  Choose to download a tarball release.
+
+1.  Download the latest version of the zip.
+
+1.  Unzip and copy the contents of the zip file into the following folder structure:  /source/vendor/Twig/
 
 > **Speaking Point**
 >
@@ -177,7 +190,7 @@ CREATE TABLE url (
 
 1. Enter a **User Name** and a **Password**.
 
-	![Setting up FTP Credentials](images/newCredentials.png?raw=true "Setting up FTP Credentials")
+	![Setting up GIT Credentials](images/newCredentials.png?raw=true "Setting up GIT Credentials")
 
 	_Setting up GIT Credentials_
 
