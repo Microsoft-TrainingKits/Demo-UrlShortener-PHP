@@ -93,9 +93,9 @@ This demo is composed of the following segments:
 
 	_Accessing the Web Site Dashboard_
 
-> **Speaking Point**
->
-> Once we're at the dashboard, we'll go to the configure tab where we can see the configuration information for our database.
+	> **Speaking Point**
+	>
+	> Once we're at the dashboard, we'll go to the configure tab where we can see the configuration information for our database.
 
 1. At the dashboard, click on the Configure tab near the top.
 
@@ -133,9 +133,9 @@ CREATE TABLE url (
 1.  Ensure your table was created by running the following command and ensuring that the "url" table is present:
 	`show tables;`
 
-> **Speaking Point**
->
-> Our database now has the table we're going to use for the rest of this demo.
+	> **Speaking Point**
+	>
+	> Our database now has the table we're going to use for the rest of this demo.
 
 <a name="segment3" />
 ### Adding Depedent Libraries and Uploading an existing PHP Website into the Windows Azure Web Site using GIT ###
@@ -162,11 +162,11 @@ CREATE TABLE url (
 
 1.  Unzip and copy the contents of the zip file into the following folder structure:  /source/vendor/Twig/
 
-> **Speaking Point**
->
-> Now let's get our PHP site ready to push to Windows Azure Websites.
->
-> Lets go to the dashboard panel of the Web Site we have just created.
+	> **Speaking Point**
+	>
+	> Now let's get our PHP site ready to push to Windows Azure Websites.
+	>
+	> Lets go to the dashboard panel of the Web Site we have just created.
 
 1. Back to the Windows Azure Management Portal, click your Web Site name, under the **Name** column to access the Dashboard.
 
@@ -229,9 +229,9 @@ CREATE TABLE url (
 1.  Commit all of your local changes:
 	`git commit -m "inital commit"`
 
-> **Speaking Point**
->
-> Now that our files have been committed to our local git repo, we can follow the next set of instructions.  
+	> **Speaking Point**
+	>
+	> Now that our files have been committed to our local git repo, we can follow the next set of instructions.  
 
 1.  Return to the portal's GIT instructions.  See the third step to add a remote branch.
 
@@ -251,9 +251,9 @@ CREATE TABLE url (
 
 	_Shorty Running_
 
-> **Speaking Point**
->
-> Now that the site is running, we can click the link at the bottom to view all available URLs but it won't work.  That's because we haven't configured the site to run against our MySQL database.  Let's do that and update Windows Azure.
+	> **Speaking Point**
+	>
+	> Now that the site is running, we can click the link at the bottom to view all available URLs but it won't work.  That's because we haven't configured the site to run against our MySQL database.  Let's do that and update Windows Azure.
 
 <a name="segment4" />
 ### Configuring and updating the PHP Website ###
@@ -266,7 +266,7 @@ CREATE TABLE url (
 
 1.  Return to the site configuration by going to the configuration tab again.  
 
-![Accessing the configuration information](Images/clickOnConfigure.png?raw=true "Accessing the configuration information")
+	![Accessing the configuration information](Images/clickOnConfigure.png?raw=true "Accessing the configuration information")
 
 	_Accessing the Configuration information_
 
@@ -301,9 +301,9 @@ CREATE TABLE url (
 
 1.  Return to the website and test that when you go to the "view urls" you are no longer getting a 500 error.
 
-> **Speaking Point**
->
-> Now that our site is configured, let's test it out using a query string method to add a new URL.
+	> **Speaking Point**
+	>
+	> Now that our site is configured, let's test it out using a query string method to add a new URL.
 
 1.  Open a new browser window and, after changing the "yourdomain" to match your site's url, go to:
 `http://your domain.azurewebsites.net/add/my_key/ms?url=http://www.microsoft.com`
